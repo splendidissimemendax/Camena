@@ -524,6 +524,7 @@ hr,
 }
 
 /* MARKS */
+mark,
 .markdown-rendered mark {
 	padding: 0.1rem 0.05rem;
 	border-radius: 0.2rem;
@@ -531,6 +532,10 @@ hr,
 
 .markdown-rendered mark .internal-link {
 	color: var(--link-color);
+}
+
+mark {
+	background-color: var(--text-highlight-bg);
 }
 
 mark.red {
