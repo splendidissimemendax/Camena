@@ -505,6 +505,10 @@ iframe.external-embed {
 	color: var(--accent-color);
 }
 
+.markdown-source-view.mod-cm6 .cm-embed-block {
+	overflow-wrap: normal;
+}
+
 /* HR */
 hr,
 .markdown-rendered hr,
@@ -627,6 +631,13 @@ table {
 
 .cm-s-obsidian .HyperMD-table-row {
 	white-space: inherit;
+}
+
+/* SEARCH RESULT */
+.cm-s-obsidian span.obsidian-search-match-highlight {
+	box-shadow: none;
+	background-color: var(--text-highlight-bg);
+	border-radius: 0.2rem;
 }
 
 /* UI HOVER/ACTIVE STATE */
