@@ -650,6 +650,10 @@ table {
 	white-space: inherit;
 }
 
+.table-wrapper {
+	margin-inline: auto;
+}
+
 /* SEARCH RESULT */
 .cm-s-obsidian span.obsidian-search-match-highlight {
 	box-shadow: none;
