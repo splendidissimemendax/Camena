@@ -453,6 +453,9 @@ input[type=checkbox] {
 	border-width: 0.1rem;
 }
 
+input[type=checkbox]:checked {
+	transition: all 0.2s ease-in-out;
+}
 
 /* DETAILS */
 details {
