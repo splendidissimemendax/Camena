@@ -98,8 +98,9 @@ body {
 	--callout-quote: var(--accent-rgb);
 	--callout-color: var(--accent-rgb);
 
-	--checkbox-color: var(--color-base-50);
-	--checkbox-color-hover: rgba(var(--accent-rgb) / 0.9);
+	--checkbox-color: var(--text-muted);
+	--checkbox-color-hover: var(--accent-color);
+	--checkbox-border-color-hover: var(--accent-color);
 
 	--code-background: rgba(var(--accent-rgb) / 0.1);
 	--code-normal: var(--accent-color);
@@ -451,9 +452,6 @@ blockquote a:hover,
 /* CHECKBOXES */
 input[type=checkbox] {
 	border-width: 0.1rem;
-}
-
-input[type=checkbox]:checked {
 	transition: all 0.2s ease-in-out;
 }
 
