@@ -107,9 +107,9 @@ body {
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
 
-	--font-interface-theme: "Fira Sans", sans-serif;
-	--font-monospace-theme: "Fira Code", monospace;
-	--font-text-theme: "Fira Sans", sans-serif;
+	--font-interface-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
+	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+	--font-text-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-text-size: 14px;
 
 	--graph-node: var(--color-red);
