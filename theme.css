@@ -111,7 +111,7 @@ body {
 	--font-interface-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font-text-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-	--font-text-size: 14px;
+	--font-text-size: 16px;
 
 	--graph-node: var(--color-red);
 	--graph-node-unresolved: rgba(var(--color-red-rgb) / 0.8);
