@@ -103,6 +103,7 @@ body {
 	--checkbox-border-color-hover: var(--accent-color);
 
 	--code-background: rgba(var(--accent-rgb) / 0.1);
+	--code-comment: var(--color-base-40);
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
 
@@ -453,6 +454,21 @@ blockquote a:hover,
 input[type=checkbox] {
 	border-width: 0.1rem;
 	transition: all 0.2s ease-in-out;
+}
+
+/* CODE */
+.cm-line.HyperMD-codeblock {
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+.cm-line.HyperMD-codeblock+.cm-line.HyperMD-codeblock {
+	border-radius: 0;
+}
+
+.cm-line.HyperMD-codeblock:has(+ :not(.cm-line.HyperMD-codeblock)) {
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
 }
 
 /* DETAILS */
