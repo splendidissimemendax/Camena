@@ -107,6 +107,7 @@ body {
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
 
+	--font-heading-theme: var(--font-text-theme);
 	--font-interface-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font-text-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
@@ -244,6 +245,7 @@ h4,
 h1,
 .markdown-rendered h1,
 .HyperMD-header .cm-header-1 {
+	font-family: var(--font-heading-theme);
 	color: var(--h1-color);
 
 	&.cm-formatting-header {
@@ -253,6 +255,7 @@ h1,
 
 h2,
 .markdown-rendered h2 {
+	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
 	background-color: rgba(var(--accent-rgb) / 0.1);
 
@@ -262,6 +265,7 @@ h2,
 }
 
 .HyperMD-header-2 {
+	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
 	background-color: rgba(var(--accent-rgb) / 0.1);
 	border-radius: 0.5rem;
@@ -276,25 +280,33 @@ h2,
 .markdown-rendered h2 .HyperMD-header-2,
 .inline-title[data-level='2'],
 .HyperMD-list-line .cm-header-2 {
+	font-family: var(--font-heading-theme);
 	border-radius: 0.5rem;
 }
 
 h3,
 .markdown-rendered h3,
 .HyperMD-header .cm-header-3 {
+	font-family: var(--font-heading-theme);
 	font-style: italic;
 	color: var(--h3-color);
 }
 
+h4,
 .HyperMD-header .cm-header-4 {
+	font-family: var(--font-heading-theme);
 	color: var(--h4-color);
 }
 
+h5,
 .HyperMD-header .cm-header-5 {
+	font-family: var(--font-heading-theme);
 	color: var(--h5-color);
 }
 
+h6,
 .HyperMD-header .cm-header-6 {
+	font-family: var(--font-heading-theme);
 	color: var(--h6-color);
 }
 
