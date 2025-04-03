@@ -570,7 +570,8 @@ img {
 
 /* MARKS */
 mark,
-.markdown-rendered mark {
+.markdown-rendered mark,
+.cm-highlight {
 	padding: 0.1rem 0.05rem;
 	border-radius: 0.2rem;
 
