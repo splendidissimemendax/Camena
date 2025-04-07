@@ -350,6 +350,12 @@ br,
 	padding-inline-end: 0.5rem !important;
 }
 
+.theme-dark .markdown-rendered blockquote,
+.theme-dark .HyperMD-quote,
+.theme-dark .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
+	background-color: rgba(var(--color) / 0.15);
+}
+
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
 .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
 	border: none;
@@ -413,6 +419,10 @@ blockquote a:hover,
 .callout {
 	border-color: rgba(var(--color) / 0.25);
 	background-color: rgba(var(--color) / 0.1);
+}
+
+.theme-dark .callout {
+	background-color: rgba(var(--color) / 0.15);
 }
 
 @media (hover:hover) {
