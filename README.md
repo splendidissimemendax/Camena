@@ -1,4 +1,4 @@
-![Thumbnail](Thumbnail.png)
+![Thumbnail](Thumbnail.jpg)
 
 A theme built to adjust to a chosen accent color.
 
