@@ -547,13 +547,6 @@ iframe.external-embed {
 	overflow-wrap: normal;
 }
 
-/* FIGURES */
-figcaption {
-	text-align: center;
-	color: var(--accent-color);
-	font-style: italic;
-}
-
 /* HR */
 hr,
 .markdown-rendered hr,
@@ -563,10 +556,18 @@ hr,
 	max-width: 300px;
 }
 
-/* IMAGES */
-img {
+/* IMAGES AND FIGURES */
+img,
+.markdown-source-view.mod-cm6 .cm-content img {
 	border-radius: 0.5rem;
 	border: 0.1rem solid var(--accent-color);
+	margin-inline: auto !important;
+}
+
+figcaption {
+	text-align: center;
+	color: var(--accent-color);
+	font-style: italic;
 }
 
 /* LINKS */
