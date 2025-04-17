@@ -529,9 +529,10 @@ a.external-link::after {
 	padding: var(--size-4-2);
 }
 
-iframe.external-embed {
+iframe.external-embed,
+.markdown-source-view.mod-cm6 .cm-content iframe.external-embed {
 	display: block;
-	margin-inline: auto;
+	margin-inline: auto !important;
 }
 
 .embed-title {
