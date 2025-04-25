@@ -426,13 +426,6 @@ blockquote a:hover,
 }
 
 @media (hover:hover) {
-
-	.metadata-container .el-blockquote .internal-link:hover,
-	.markdown-rendered .el-blockquote .internal-link:hover {
-		color: var(--color-cyan);
-	}
-
-
 	.metadata-container .callout .internal-link:hover,
 	.markdown-rendered .callout .internal-link:hover {
 		color: rgb(var(--color));
