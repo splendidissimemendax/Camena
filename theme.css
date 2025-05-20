@@ -1,12 +1,12 @@
 :root {
-	--red-h: 0;
-	--orange-h: 30;
-	--yellow-h: 55;
-	--green-h: 110;
-	--cyan-h: 190;
-	--blue-h: 220;
-	--purple-h: 260;
-	--pink-h: 330;
+	--red-h: 5;
+	--orange-h: 25;
+	--yellow-h: 50;
+	--green-h: 100;
+	--cyan-h: 185;
+	--blue-h: 210;
+	--purple-h: 270;
+	--pink-h: 320;
 }
 
 .theme-light {
