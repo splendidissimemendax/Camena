@@ -112,6 +112,9 @@ body {
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font-text-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-text-size: 16px;
+	--font-smallest: 0.8rem;
+    --font-smaller: 0.875rem;
+    --font-small: 0.933rem;
 
 	--graph-node: var(--color-red);
 	--graph-node-unresolved: rgba(var(--color-red-rgb) / 0.8);
@@ -770,6 +773,10 @@ table {
 	.metadata-property-warning-icon:hover {
 		background-color: rgba(var(--accent-rgb) / 0.15);
 	}
+}
+
+.suggestion-container.mod-property-value .suggestion-item {
+	font-size: var(--metadata-input-font-size);
 }
 
 .file-tree .mod-new.is-selected {
