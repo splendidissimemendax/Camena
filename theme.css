@@ -29,7 +29,7 @@
 	--color-purple-rgb: from var(--color-purple) r g b;
 	--color-pink: hsl(var(--pink-h), var(--accent-s), var(--accent-l));
 	--color-pink-rgb: from var(--color-pink) r g b;
-	--color-grey: hsl(0, 0, var(--accent-l));
+	--color-grey: hsl(0, 0%, var(--accent-l));
 	--color-grey-rgb: from var(--color-grey) r g b;
 
 	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 98%);
@@ -66,7 +66,7 @@
 	--color-purple-rgb: from var(--color-purple) r g b;
 	--color-pink: hsl(var(--pink-h), var(--accent-s), var(--accent-l));
 	--color-pink-rgb: from var(--color-pink) r g b;
-	--color-grey: hsl(0, 0, var(--accent-l));
+	--color-grey: hsl(0, 0%, var(--accent-l));
 	--color-grey-rgb: from var(--color-grey) r g b;
 
 	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 2%);
