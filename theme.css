@@ -69,15 +69,15 @@
 	--color-grey: hsl(0, 0%, var(--accent-l));
 	--color-grey-rgb: from var(--color-grey) r g b;
 
-	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 2%);
-	--color-base-05: hsl(var(--accent-h), calc(var(--accent-s) / 3), 5%);
-	--color-base-10: hsl(var(--accent-h), calc(var(--accent-s) / 3), 10%);
-	--color-base-20: hsl(var(--accent-h), calc(var(--accent-s) / 3), 15%);
-	--color-base-25: hsl(var(--accent-h), calc(var(--accent-s) / 3), 20%);
-	--color-base-30: hsl(var(--accent-h), calc(var(--accent-s) / 3), 25%);
-	--color-base-35: hsl(var(--accent-h), calc(var(--accent-s) / 3), 30%);
-	--color-base-40: hsl(var(--accent-h), calc(var(--accent-s) / 3), 35%);
-	--color-base-50: hsl(var(--accent-h), calc(var(--accent-s) / 3), 40%);
+	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 10%);
+	--color-base-05: hsl(var(--accent-h), calc(var(--accent-s) / 3), 15%);
+	--color-base-10: hsl(var(--accent-h), calc(var(--accent-s) / 3), 20%);
+	--color-base-20: hsl(var(--accent-h), calc(var(--accent-s) / 3), 25%);
+	--color-base-25: hsl(var(--accent-h), calc(var(--accent-s) / 3), 30%);
+	--color-base-30: hsl(var(--accent-h), calc(var(--accent-s) / 3), 35%);
+	--color-base-35: hsl(var(--accent-h), calc(var(--accent-s) / 3), 40%);
+	--color-base-40: hsl(var(--accent-h), calc(var(--accent-s) / 3), 45%);
+	--color-base-50: hsl(var(--accent-h), calc(var(--accent-s) / 3), 50%);
 	--color-base-60: hsl(var(--accent-h), calc(var(--accent-s) / 3), 60%);
 	--color-base-70: hsl(var(--accent-h), calc(var(--accent-s) / 3), 70%);
 	--color-base-100: hsl(var(--accent-h), calc(var(--accent-s) / 3), 80%);
@@ -102,7 +102,7 @@ body {
 	--checkbox-color-hover: var(--accent-color);
 	--checkbox-border-color-hover: var(--accent-color);
 
-	--code-background: rgba(var(--accent-rgb) / 0.1);
+	--code-background: rgba(var(--accent-rgb) / 0.15);
 	--code-comment: var(--color-base-40);
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
@@ -177,9 +177,9 @@ body {
 	--table-header-background: var(--accent-color);
 	--table-header-background-hover: var(--accent-color);
 	--table-header-color: var(--color-base-00);
-	--table-row-background-hover: rgba(var(--accent-rgb) / 0.1);
-	--table-row-alt-background: rgba(var(--accent-rgb) / 0.1);
-	--table-row-alt-background-hover: rgba(var(--accent-rgb) / 0.2);
+	--table-row-background-hover: rgba(var(--accent-rgb) / 0.15);
+	--table-row-alt-background: rgba(var(--accent-rgb) / 0.15);
+	--table-row-alt-background-hover: rgba(var(--accent-rgb) / 0.3);
 
 	--text-highlight-bg-rgb: var(--accent-rgb);
 	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb) / 0.25);
@@ -260,7 +260,7 @@ h2,
 .markdown-rendered h2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgba(var(--accent-rgb) / 0.1);
+	background-color: rgba(var(--accent-rgb) / 0.15);
 
 	&.cm-formatting-header {
 		opacity: 0.5;
@@ -270,7 +270,7 @@ h2,
 .HyperMD-header-2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgba(var(--accent-rgb) / 0.1);
+	background-color: rgba(var(--accent-rgb) / 0.15);
 	border-radius: 0.5rem;
 
 	.cm-formatting-header {
@@ -492,7 +492,7 @@ input[type=checkbox] {
 /* DETAILS */
 details {
 	padding: 0.5rem 0.5rem 0.5rem 3ch;
-	background-color: rgba(var(--accent-rgb) / 0.1);
+	background-color: rgba(var(--accent-rgb) / 0.15);
 	border-radius: 0.5rem;
 }
 
