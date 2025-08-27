@@ -108,9 +108,9 @@ body {
 	--code-size: inherit;
 
 	--font-heading-theme: var(--font-text-theme);
-	--font-interface-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
+	--font-interface-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
-	--font-text-theme: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+	--font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-text-size: 16px;
 	--font-smallest: 0.8rem;
     --font-smaller: 0.875rem;
