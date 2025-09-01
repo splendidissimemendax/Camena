@@ -580,6 +580,13 @@ figcaption {
 	text-decoration: 0.1em wavy underline currentColor;
 }
 
+@media (hover: hover) {
+	.cm-s-obsidian span.cm-link:hover,
+	.cm-s-obsidian span.cm-url:hover {
+		text-decoration-style: wavy;
+	}
+}
+
 /* MARKS */
 mark,
 .markdown-rendered mark,
