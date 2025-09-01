@@ -585,6 +585,11 @@ figcaption {
 	.cm-s-obsidian span.cm-url:hover {
 		text-decoration-style: wavy;
 	}
+
+	.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
+	.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
+        text-decoration-line: none;
+    }
 }
 
 /* MARKS */
