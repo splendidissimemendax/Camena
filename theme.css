@@ -601,6 +601,16 @@ figcaption {
     }
 }
 
+/* LISTS */
+.HyperMD-list-line-2 {
+    text-indent: calc(-48px - 2.2ch) !important;
+	padding-inline-start: calc(48px + 2.2ch) !important;
+}
+
+.cm-formatting-list-ul, .cm-formatting-list-ol {
+	padding-inline: 1.5ch .5ch;
+}
+
 /* MARKS */
 mark,
 .markdown-rendered mark,
