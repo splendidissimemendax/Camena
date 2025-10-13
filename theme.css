@@ -97,6 +97,8 @@ body {
 	--background-modifier-message: var(--accent-color);
 	--background-secondary: var(--background-secondary-alt);
 
+	--bases-table-header-color: var(--color-base-00);
+
 	--blockquote-color: ;
 
 	--callout-quote: var(--accent-rgb);
@@ -339,8 +341,33 @@ p:has(span.left) {
 	text-align: left;
 }
 
-/* BREAKS */
+/* BASES */
+.bases-thead {
+	background-color: var(--accent-color);
+	color: var(--table-header-color);
 
+	.bases-td {
+		box-shadow: calc(var(--bases-table-column-border-width) * -1) 0 0 var(--table-header-color);
+	}
+}
+
+.bases-tr:nth-child(2n) {
+	background-color: rgba(var(--accent-rgb) / var(--opacity));
+
+	&:hover {
+		background-color: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
+	}
+}
+
+.bases-td:focus-within {
+	background-color: transparent;
+}
+
+.bases-td:focus-within .bases-table-cell {
+	background-color: transparent;
+}
+
+/* BREAKS */
 br,
 .el-br {
 	margin-block: var(--p-spacing);
@@ -700,7 +727,8 @@ sub {
 	color: var(--text-muted);
 }
 
-table {
+table,
+.bases-tr {
 	margin-inline: auto;
 
 	--link-color: var(--accent-color);
