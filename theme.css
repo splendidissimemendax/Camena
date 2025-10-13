@@ -372,17 +372,13 @@ p:has(span.left) {
 	background-color: rgba(var(--accent-rgb) / var(--opacity));
 }
 
-.bases-tr:nth-child(2n) .bases-td:focus-within .bases-table-cell {
+/* .bases-tr:nth-child(2n) .bases-td:focus-within .bases-table-cell {
 	background-color: rgba(var(--accent-rgb) / var(--opacity));
 }
 
 .bases-tr:nth-child(2n):hover .bases-td:focus-within .bases-table-cell {
 	background-color: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
-}
-
-.bases-table-cell {
-	height: auto;
-}
+} */
 
 	/* CARDS */
 .bases-cards-item:hover {
