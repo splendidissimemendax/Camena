@@ -352,13 +352,13 @@ p:has(span.left) {
 	}
 }
 
-.bases-tr:nth-child(2n) {
+/* .bases-tr:nth-child(2n) {
 	background-color: rgba(var(--accent-rgb) / var(--opacity));
 
 	&:hover {
 		background-color: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
 	}
-}
+} */
 
 .bases-td:focus-within {
 	background-color: var(--color-base-00);
