@@ -124,6 +124,7 @@ body {
     --font-smaller: 0.875rem;
     --font-small: 0.933rem;
 
+	--graph-line: var(--text-faint);
 	--graph-node: var(--color-red);
 	--graph-node-unresolved: rgba(var(--color-red-rgb) / 0.8);
 	--graph-node-tag: var(--color-yellow);
