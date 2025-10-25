@@ -567,7 +567,20 @@ a.external-link::after {
 	content: none;
 }
 
-/* EMBEDS */
+/* EMBEDS (EXTERNAL) */
+iframe {
+	display: block;
+	width: 100%;
+	margin-inline: auto !important;
+	height: var(--embed-max-height);
+	border-top: 0.1rem solid var(--accent-color);
+	border-inline-end: 0.1rem solid var(--accent-color);
+	border-bottom: 0.1rem solid var(--accent-color);
+	border-inline-start: 0.1rem solid var(--accent-color);
+	border-radius: 0.5rem;
+}
+
+/* EMBEDS (INTERNAL) */
 .markdown-embed {
 	border-top: 0.1rem solid var(--accent-color);
 	border-inline-end: 0.1rem solid var(--accent-color);
@@ -594,6 +607,11 @@ iframe.external-embed,
 
 .markdown-source-view.mod-cm6 .cm-embed-block {
 	overflow-wrap: normal;
+}
+
+/* FLASHING */
+.is-flashing {
+	color: inherit;
 }
 
 /* HR */
