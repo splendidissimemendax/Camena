@@ -124,11 +124,11 @@ body {
     --font-smaller: 0.875rem;
     --font-small: 0.933rem;
 
-	--graph-line: var(--text-faint);
-	--graph-node: var(--color-red);
-	--graph-node-unresolved: rgba(var(--color-red-rgb) / 0.8);
+	--graph-line: var(--color-base-25);
+	--graph-node: var(--accent-color);
+	--graph-node-unresolved: var(--color-red);
 	--graph-node-tag: var(--color-yellow);
-	--graph-node-attachment: var(--color-blue);
+	--graph-node-attachment: var(--color-green);
 
 	--h1-color: var(--accent-color);
 	--h2-color: var(--accent-color);
@@ -281,6 +281,7 @@ h2,
 	color: var(--h2-color);
 	background-color: rgba(var(--accent-rgb) / var(--opacity));
 	border-radius: 0.5rem;
+	padding-inline: 0.5rem;
 
 	.cm-formatting-header {
 		color: var(--h2-color);
@@ -294,6 +295,11 @@ h2,
 .HyperMD-list-line .cm-header-2 {
 	font-family: var(--font-heading-theme);
 	border-radius: 0.5rem;
+	padding-inline: 0.5rem;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width .cm-line.HyperMD-header-2 {
+	max-width: calc(var(--file-line-width) - 1rem);
 }
 
 h3,
@@ -520,6 +526,11 @@ blockquote a:hover,
 	width: 100%;
 }
 
+/* CANVAS */
+.is-themed .canvas-group-label {
+	color: var(--color-base-00);
+}
+
 /* CHECKBOXES */
 input[type=checkbox] {
 	border-width: 0.1rem;
@@ -726,7 +737,8 @@ mark.grey {
 	background-color: rgba(from var(--text-normal) r g b / var(--opacity));
 }
 
-mark.line {
+mark.line,
+u {
 	background-color: transparent;
 	text-decoration: solid underline 0.1rem currentColor;
 	padding: 0;
