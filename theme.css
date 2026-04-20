@@ -106,6 +106,8 @@ body {
 	--callout-quote: var(--accent-rgb);
 	--callout-color: var(--accent-rgb);
 
+	--canvas-color-5: var(--color-blue-rgb);
+
 	--checkbox-color: var(--text-muted);
 	--checkbox-color-hover: var(--accent-color);
 	--checkbox-border-color-hover: var(--accent-color);
