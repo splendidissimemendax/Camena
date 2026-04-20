@@ -976,6 +976,47 @@ p:has(span.left) {
 	text-align: left;
 }
 
+	/* COLORS */
+.r,
+.red {
+	color: var(--color-red)
+}
+
+.orange {
+	color: var(--color-orange);
+}
+
+.y,
+.yellow {
+	color: var(--color-yellow)
+}
+
+.g,
+.green {
+	color: var(--color-green)
+}
+
+.cyan {
+	color: var(--color-cyan);
+}
+
+.blue {
+	color: var(--color-blue);
+}
+
+.purple {
+	color: var(--color-purple);
+}
+
+.pink {
+	color: var(--color-pink);
+}
+
+.grey,
+.gray {
+	color: var(--color-grey);
+}
+
 	/* LINE NUMBERS */
 .lnno {
     float: right;
