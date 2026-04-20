@@ -110,7 +110,10 @@ body {
 
 	--checkbox-color: var(--text-muted);
 	--checkbox-color-hover: var(--accent-color);
+	--checkbox-border-color: var(--checkbox-color);
 	--checkbox-border-color-hover: var(--accent-color);
+	--checklist-done-decoration: none;
+	--checklist-done-color: var(--text-normal);
 
 	--code-background: rgba(var(--accent-rgb) / var(--opacity));
 	--code-comment: var(--color-base-40);
