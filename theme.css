@@ -960,6 +960,7 @@ u {
 
 
 /* STYLES */
+	/* ALIGNMENTS */
 .center,
 p:has(span.center) {
 	text-align: center;
@@ -975,6 +976,28 @@ p:has(span.left) {
 	text-align: left;
 }
 
+	/* LINE NUMBERS */
+.lnno {
+    float: right;
+    font-family: var(--font-monospace-theme);
+    color: var(--text-muted);
+}
+
+.cm-html-embed.cm-embed-block:has(.lnno) {
+    float: right;
+}
+
+.cm-html-embed.cm-embed-block:has(.lnno) + .cm-line:has(br) {
+    height: 0;
+    width: fit-content;
+
+    br {
+        width: 0;
+        height: 0;
+    }
+}
+
+	/* SUP/SUB */
 sup {
 	vertical-align: super;
 	line-height: 0.5em;
