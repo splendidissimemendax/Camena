@@ -1049,6 +1049,12 @@ sub {
 	line-height: 0.5em;
 }
 
+	/* TABS */
+.tab {
+	display:inline-block;
+	width: 2rem;
+}
+
 
 
 /* TABLES */
