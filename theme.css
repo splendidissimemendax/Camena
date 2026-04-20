@@ -128,8 +128,8 @@ body {
 	--font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-text-size: 16px;
 	--font-smallest: 0.8em;
-    --font-smaller: 0.875em;
-    --font-small: 0.933em;
+	--font-smaller: 0.875em;
+	--font-small: 0.933em;
 
 	--graph-line: var(--color-base-25);
 	--graph-node: var(--accent-color);
@@ -165,8 +165,8 @@ body {
 	--link-external-color: var(--link-color);
 	--link-external-color-hover: var(--link-color-hover);
 	--link-external-decoration: none;
-	--link-unresolved-color: var(--link-color-hover);
-	--link-unresolved-opacity: 0.7;
+	--link-unresolved-color: var(--color-red);
+	--link-unresolved-opacity: 1.0;
 	--link-unresolved-decoration-color: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
 
 	--list-marker-color: var(--color-base-50);
@@ -268,9 +268,9 @@ body {
 }
 
 @media (hover: hover) {
-    .text-icon-button.has-active-menu, .text-icon-button:hover {
-        background-color: transparent;
-    }
+	.text-icon-button.has-active-menu, .text-icon-button:hover {
+		background-color: transparent;
+	}
 }
 
 	/* CUSTOM — QUOTES */
@@ -520,10 +520,10 @@ li[data-task="<"]>p>input:checked::before,
 input[data-task=">"]:checked::before,
 li[data-task=">"]>input:checked::before,
 li[data-task=">"]>p>input:checked::before {
-    color: var(--text-muted);
+	color: var(--text-muted);
 	font-family: var(--font-text);
 	font-weight: bold;
-    position: absolute;
+	position: absolute;
 	margin-left: .3em;
 	line-height: 1.1em;
 }
@@ -537,9 +537,9 @@ li[data-task="<"]>p>input:checked,
 input[data-task=">"]:checked,
 li[data-task=">"]>input:checked,
 li[data-task=">"]>p>input:checked {
-    --checkbox-color-hover: transparent;
-    background-color: transparent;
-    border-color: var(--text-muted);
+	--checkbox-color-hover: transparent;
+	background-color: transparent;
+	border-color: var(--text-muted);
 }
 
 input[data-task="-"]:checked::after,
@@ -551,7 +551,7 @@ li[data-task="<"]>p>input:checked::after,
 input[data-task=">"]:checked::after,
 li[data-task=">"]>input:checked::after,
 li[data-task=">"]>p>input:checked::after {
-    --webkit-mask-image: none;
+	--webkit-mask-image: none;
 }
 
 ul > li.task-list-item[data-task="-"],
@@ -879,8 +879,8 @@ figcaption {
 
 	.markdown-source-view.mod-cm6 .cm-link .cm-underline:hover,
 	.markdown-source-view.mod-cm6 .cm-url .cm-underline:hover {
-        text-decoration-line: none;
-    }
+		text-decoration-line: none;
+	}
 }
 
 
@@ -1019,23 +1019,23 @@ p:has(span.left) {
 
 	/* LINE NUMBERS */
 .lnno {
-    float: right;
-    font-family: var(--font-monospace-theme);
-    color: var(--text-muted);
+	float: right;
+	font-family: var(--font-monospace-theme);
+	color: var(--text-muted);
 }
 
 .cm-html-embed.cm-embed-block:has(.lnno) {
-    float: right;
+	float: right;
 }
 
 .cm-html-embed.cm-embed-block:has(.lnno) + .cm-line:has(br) {
-    height: 0;
-    width: fit-content;
+	height: 0;
+	width: fit-content;
 
-    br {
-        width: 0;
-        height: 0;
-    }
+	br {
+		width: 0;
+		height: 0;
+	}
 }
 
 	/* SUP/SUB */
@@ -1092,7 +1092,7 @@ table,
 }
 
 @media (hover: hover) {
-    .cm-html-embed tbody:has(mark) tr:nth-child(odd):hover,
+	.cm-html-embed tbody:has(mark) tr:nth-child(odd):hover,
 	.markdown-rendered tbody:has(mark) tr:nth-child(odd):hover {
 		background-color: var(--table-row-background-hover);
 	}
