@@ -97,6 +97,7 @@ body {
 	--background-modifier-message: var(--accent-color);
 	--background-secondary: var(--background-secondary-alt);
 
+	--bases-table-font-size: var(--text-size-normal);
 	--bases-table-header-color: var(--color-base-00);
 
 	--blockquote-color: ;
@@ -120,9 +121,9 @@ body {
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-text-size: 16px;
-	--font-smallest: 0.8rem;
-    --font-smaller: 0.875rem;
-    --font-small: 0.933rem;
+	--font-smallest: 0.8em;
+    --font-smaller: 0.875em;
+    --font-small: 0.933em;
 
 	--graph-line: var(--color-base-25);
 	--graph-node: var(--accent-color);
@@ -172,6 +173,8 @@ body {
 	--scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100) / 0.2);
 	--scrollbar-bg: rgba(var(--mono-rgb-100) / 0.05);
 	--scrollbar-thumb-bg: rgba(var(--mono-rgb-100) / 0.1);
+
+	--setting-items-background: rgba(var(--accent-rgb) / var(--opacity));
 
 	--status-bar-border-color: var(--text-muted);
 
@@ -296,10 +299,6 @@ h2,
 	font-family: var(--font-heading-theme);
 	border-radius: 0.5rem;
 	padding-inline: 0.5rem;
-}
-
-.markdown-source-view.mod-cm6.is-readable-line-width .cm-line.HyperMD-header-2 {
-	max-width: calc(var(--file-line-width) - 1rem);
 }
 
 h3,
@@ -620,9 +619,23 @@ iframe.external-embed,
 	overflow-wrap: normal;
 }
 
+.popover.hover-popover > .markdown-embed > .markdown-embed-content .internal-embed .markdown-preview-view {
+	padding: var(--embed-padding);
+}
+
 /* FLASHING */
 .is-flashing {
 	color: inherit;
+}
+
+/* FOOTNOTES */
+.HyperMD-header span.cm-footref.cm-header-1, 
+.HyperMD-header span.cm-footref.cm-header-2, 
+.HyperMD-header span.cm-footref.cm-header-3, 
+.HyperMD-header span.cm-footref.cm-header-4, 
+.HyperMD-header span.cm-footref.cm-header-5, 
+.HyperMD-header span.cm-footref.cm-header-6 {
+	font-size: var(--font-smallest) !important;
 }
 
 /* HR */
@@ -646,6 +659,11 @@ img,
 .markdown-source-view.mod-cm6 .cm-content img {
 	border-radius: 0.5rem;
 	border: 0.1rem solid var(--accent-color);
+	margin-inline: auto !important;
+}
+
+span > img {
+	display: block;
 	margin-inline: auto !important;
 }
 
@@ -677,11 +695,6 @@ figcaption {
 }
 
 /* LISTS */
-.HyperMD-list-line-2 {
-    text-indent: calc(-48px - 2.2ch) !important;
-	padding-inline-start: calc(48px + 2.2ch) !important;
-}
-
 .cm-formatting-list-ul, .cm-formatting-list-ol {
 	padding-inline: 1.5ch .5ch;
 }
