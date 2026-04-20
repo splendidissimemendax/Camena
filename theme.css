@@ -486,6 +486,99 @@ input[type=checkbox] {
 	transition: all 0.2s ease-in-out;
 }
 
+input[type=checkbox]:checked:after,
+li[type=checkbox]>input:checked::after,
+li[type=checkbox]>p>input:checked::after {
+	background-color: transparent;
+}
+
+	/* IN PROGRESS: / */
+input[data-task="/"]:checked,
+li[data-task="/"]>input:checked,
+li[data-task="/"]>p>input:checked {
+	background-color: transparent;
+	background-image: linear-gradient(135deg, var(--checkbox-color) 50%, transparent 50%);
+}
+
+@media (hover: hover) {
+	li[data-task="/"]>input[type=checkbox]:checked:hover {
+		background-color: transparent;
+		background-image: linear-gradient(135deg, var(--checkbox-color-hover) 50%, transparent 50%);
+	}
+}
+
+	/* CANCELED SUITE */
+input[data-task="-"]:checked::before,
+li[data-task="-"]>input:checked::before,
+li[data-task="-"]>p>input:checked::before,
+input[data-task="<"]:checked::before,
+li[data-task="<"]>input:checked::before,
+li[data-task="<"]>p>input:checked::before,
+input[data-task=">"]:checked::before,
+li[data-task=">"]>input:checked::before,
+li[data-task=">"]>p>input:checked::before {
+    color: var(--text-muted);
+	font-family: var(--font-text);
+	font-weight: bold;
+    position: absolute;
+	margin-left: .3em;
+	line-height: 1.1em;
+}
+
+input[data-task="-"]:checked,
+li[data-task="-"]>input:checked,
+li[data-task="-"]>p>input:checked,
+input[data-task="<"]:checked,
+li[data-task="<"]>input:checked,
+li[data-task="<"]>p>input:checked,
+input[data-task=">"]:checked,
+li[data-task=">"]>input:checked,
+li[data-task=">"]>p>input:checked {
+    --checkbox-color-hover: transparent;
+    background-color: transparent;
+    border-color: var(--text-muted);
+}
+
+input[data-task="-"]:checked::after,
+li[data-task="-"]>input:checked::after,
+li[data-task="-"]>p>input:checked::after,
+input[data-task="<"]:checked::after,
+li[data-task="<"]>input:checked::after,
+li[data-task="<"]>p>input:checked::after,
+input[data-task=">"]:checked::after,
+li[data-task=">"]>input:checked::after,
+li[data-task=">"]>p>input:checked::after {
+    --webkit-mask-image: none;
+}
+
+ul > li.task-list-item[data-task="-"],
+ul > li.task-list-item[data-task="<"],
+ul > li.task-list-item[data-task=">"] {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+		/* CANCELLED SUITE: CANCELED: - */
+input[data-task="-"]:checked::before,
+li[data-task="-"]>input:checked::before,
+li[data-task="-"]>p>input:checked::before {
+	content: "-";
+}
+
+		/* CANCELLED SUITE: SCHEDULED: < */
+input[data-task="<"]:checked::before,
+li[data-task="<"]>input:checked::before,
+li[data-task="<"]>p>input:checked::before {
+	content: "<";
+}
+
+		/* CANCELLED SUITE: RESCHEDULED: > */
+input[data-task=">"]:checked::before,
+li[data-task=">"]>input:checked::before,
+li[data-task=">"]>p>input:checked::before {
+	content: ">";
+}
+
 
 
 /* CODE */
