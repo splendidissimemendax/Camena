@@ -94,7 +94,7 @@
 }
 
 body {
-	--background-modifier-hover: rgba(var(--accent-rgb) / 0.2);
+	--background-modifier-hover: rgb(var(--accent-rgb) / 0.2);
 	--background-modifier-message: var(--accent-color);
 	--background-secondary: var(--background-secondary-alt);
 
@@ -104,8 +104,8 @@ body {
 
 	--blockquote-color: ;
 
-	--callout-quote: var(--accent-rgb);
-	--callout-color: var(--accent-rgb);
+	--callout-quote: var(--accent-color);
+	--callout-color: var(--accent-color);
 
 	--canvas-color-5: var(--color-blue-rgb);
 
@@ -116,7 +116,7 @@ body {
 	--checklist-done-decoration: none;
 	--checklist-done-color: var(--text-normal);
 
-	--code-background: rgba(var(--accent-rgb) / var(--opacity));
+	--code-background: rgb(var(--accent-rgb) / var(--opacity));
 	--code-comment: var(--color-base-40);
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
@@ -127,10 +127,14 @@ body {
 	--font-interface-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif; 
 	--font-monospace-theme: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 	--font-text-theme: Cantarell, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-	--font-text-size: 16px;
+	
 	--font-smallest: 0.8em;
 	--font-smaller: 0.875em;
 	--font-small: 0.933em;
+    --font-ui-large: var(--h5-size);
+    --font-ui-medium: var(--font-text-size);
+    --font-ui-small: var(--font-smaller);
+	--font-ui-smaller: var(--font-smallest);
 
 	--graph-line: var(--color-base-25);
 	--graph-node: var(--accent-color);
@@ -156,8 +160,8 @@ body {
 
 	--icon-color-focused: var(--color-base-60);
 
-	--indentation-guide-color: rgba(var(--mono-rgb-100) / 0.12);
-	--indentation-guide-color-active: rgba(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	--indentation-guide-color: rgb(var(--mono-rgb-100) / 0.12);
+	--indentation-guide-color-active: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
 
 	--link-color: var(--accent-color);
 	--link-color-hover: var(--link-color);
@@ -168,7 +172,7 @@ body {
 	--link-external-decoration: none;
 	--link-unresolved-color: var(--color-red);
 	--link-unresolved-opacity: 1.0;
-	--link-unresolved-decoration-color: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
+	--link-unresolved-decoration-color: rgb(var(--accent-rgb) / calc(var(--opacity) * 2));
 
 	--list-marker-color: var(--color-base-50);
 
@@ -177,31 +181,31 @@ body {
 
 	--p-spacing: calc(var(--line-height-normal) * 1rem);
 
-	--scrollbar-active-thumb-bg: rgba(var(--mono-rgb-100) / 0.2);
-	--scrollbar-bg: rgba(var(--mono-rgb-100) / 0.05);
-	--scrollbar-thumb-bg: rgba(var(--mono-rgb-100) / 0.1);
+	--scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) / 0.2);
+	--scrollbar-bg: rgb(var(--mono-rgb-100) / 0.05);
+	--scrollbar-thumb-bg: rgb(var(--mono-rgb-100) / 0.1);
 
-	--setting-items-background: rgba(var(--accent-rgb) / var(--opacity));
+	--setting-items-background: rgb(var(--accent-rgb) / var(--opacity));
 
 	--status-bar-border-color: var(--text-muted);
 
-	--swatch-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100) / var(--opacity));
+	--swatch-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / var(--opacity));
 
 	--tab-text-color-focused-active-current: var(--color-base-60);
 
-	--tab-switcher-preview-shadow: 0 0 0 1px rgba(var(--mono-rgb-100) / 0.05);
+	--tab-switcher-preview-shadow: 0 0 0 1px rgb(var(--mono-rgb-100) / 0.05);
 
 	--table-border-color: var(--accent-color);
 	--table-border-width: 0.1rem;
 	--table-header-background: var(--accent-color);
 	--table-header-background-hover: var(--accent-color);
 	--table-header-color: var(--color-base-00);
-	--table-row-background-hover: rgba(var(--accent-rgb) / var(--opacity));
-	--table-row-alt-background: rgba(var(--accent-rgb) / var(--opacity));
-	--table-row-alt-background-hover: rgba(var(--accent-rgb) / calc(var(--opacity) * 2));
+	--table-row-background-hover: rgb(var(--accent-rgb) / var(--opacity));
+	--table-row-alt-background: rgb(var(--accent-rgb) / var(--opacity));
+	--table-row-alt-background-hover: rgb(var(--accent-rgb) / calc(var(--opacity) * 2));
 
 	--text-highlight-bg-rgb: var(--accent-rgb);
-	--text-highlight-bg: rgba(var(--text-highlight-bg-rgb) / 0.25);
+	--text-highlight-bg: rgb(var(--text-highlight-bg-rgb) / 0.25);
 
 	--text-normal: var(--color-base-100);
 	--text-muted: var(--color-base-50);
@@ -209,7 +213,7 @@ body {
 
 	--vault-profile-color: var(--color-base-60);
 
-	--workspace-background-translucent: rgba(var(--mono-rgb-0) / 0.6);
+	--workspace-background-translucent: rgb(var(--mono-rgb-0) / 0.6);
 
 	/* SNIPPET: EMBED HEIGHT FIX */
 	--embed-max-height: 80vh;
@@ -250,6 +254,13 @@ body {
 .popover.hover-popover .bases-embed[alt~="Inlines"] .bases-view {
 	padding: 0;
 }
+	/* CUSTOM — MONO */
+.bases-embed[alt~="mono"],
+.bases-embed[alt~="Mono"] {
+	.bases-list-property:first-of-type {
+		font-family: var(--font-monospace)
+	}
+}
 
 	/* CUSTOM — QUOTES */
 .bases-embed[alt~="quotes"],
@@ -268,7 +279,7 @@ body {
 		padding: 0.25rem 0 0.25rem .75rem;
 		border-left: .5rem solid var(--color-accent);
 		border-radius: 0.5rem;
-		background-color: rgba(var(--accent-rgb) / var(--opacity));
+		background-color: rgb(var(--accent-rgb) / var(--opacity));
 	}
 }
 
@@ -299,7 +310,7 @@ body {
 
 	/* CARDS */
 .bases-cards-item:hover {
-	background-color: rgba(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(var(--accent-rgb) / var(--opacity));
 }
 
 .bases-cards-property.mod-title {
@@ -344,7 +355,7 @@ body {
 }
 
 .bases-tr:hover .bases-td:focus-within .bases-table-cell {
-	background-color: rgba(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(var(--accent-rgb) / var(--opacity));
 }
 
 
@@ -361,19 +372,19 @@ br,
 .markdown-rendered blockquote,
 .HyperMD-quote,
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-	--color: var(--accent-rgb);
+	--color: var(--accent-color);
 
-	--hr-color: rgb(var(--color));
+	--hr-color: var(--color);
 
-	border-left: 0.5rem solid rgb(var(--color));
-	background-color: rgba(var(--color) / 0.1);
-	padding-inline-end: 0.5rem !important;
+	border-left: 0.5rem solid var(--color);
+	background-color: rgb(from var(--color) r g b / 0.1);
+	padding-inline-end: 0.5rem;
 }
 
 .theme-dark .markdown-rendered blockquote,
 .theme-dark .HyperMD-quote,
 .theme-dark .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-	background-color: rgba(var(--color) / var(--opacity));
+	background-color: rgb(from var(--color) r g b / var(--opacity));
 }
 
 .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before,
@@ -383,7 +394,7 @@ br,
 
 .markdown-rendered blockquote {
 	border-radius: 0.5rem;
-	padding-block: 0.5rem !important;
+	padding-block: 0.5rem;
 }
 
 .HyperMD-quote {
@@ -401,31 +412,31 @@ br,
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
-	color: rgba(var(--color) / 0.6);
+	color: rgb(from var(--color) r g b / 0.6);
 }
 
 .cm-s-obsidian span.cm-formatting-quote.cm-hmd-callout {
-	color: rgba(var(--color) / 0.6);
+	color: rgb(from var(--color) r g b/ 0.6);
 }
 
 span.cm-quote.cm-hashtag,
 blockquote a.tag,
 .callout-content a.tag {
-	color: rgb(var(--color));
-	background-color: rgba(var(--color) / 0.1);
+	color: var(--color);
+	background-color: rgb(from var(--color) r g b/ 0.1);
 }
 
 blockquote a.tag:hover,
 .callout-content a.tag:hover {
-	background-color: rgba(var(--color) / 0.2);
+	background-color: rgb(from var(--color) r g b / 0.2);
 }
 
 blockquote a,
 .callout-content a,
 blockquote a:hover,
 .callout-content a:hover {
-	--link-color: rgb(var(--color));
-	--link-external-color: rgb(var(--color));
+	--link-color: var(--color);
+	--link-external-color: var(--color);
 }
 
 
@@ -434,23 +445,23 @@ blockquote a:hover,
 .markdown-rendered .callout {
 	--color: var(--callout-color);
 
-	--hr-color: rgb(var(--color));
-	--text-highlight-bg: rgba(var(--color) / calc(var(--opacity) * 2));
+	--hr-color: var(--color);
+	--text-highlight-bg: rgb(from var(--color) r g b / calc(var(--opacity) * 2));
 }
 
 .callout {
-	border-color: rgba(var(--color) / 0.25);
-	background-color: rgba(var(--color) / 0.1);
+	border-color: rgb(from var(--color) r g b / 0.25);
+	background-color: rgb(from var(--color) r g b / 0.1);
 }
 
 .theme-dark .callout {
-	background-color: rgba(var(--color) / var(--opacity));
+	background-color: rgb(from var(--color) r g b / var(--opacity));
 }
 
 @media (hover:hover) {
 	.metadata-container .callout .internal-link:hover,
 	.markdown-rendered .callout .internal-link:hover {
-		color: rgb(var(--color));
+		color: var(--color);
 	}
 }
 
@@ -458,23 +469,23 @@ blockquote a:hover,
 .markdown-rendered .callout .internal-link,
 .metadata-container .el-blockquote .internal-link ,
 .markdown-rendered .el-blockquote .internal-link {
-	--checkbox-color: rgb(var(--color));
-	--checkbox-color-hover: rgba(var(--color) / 0.9);
+	--checkbox-color: var(--color);
+	--checkbox-color-hover: rgb(from var(--color) r g b / 0.9);
 
-	--code-background: rgba(var(--color) / 0.1);
-	--code-normal: rgb(var(--color));
+	--code-background: rgb(from var(--color) r g b / 0.1);
+	--code-normal: var(--color);
 	
-	--link-color: rgb(var(--color));
-	--link-color-hover: rgb(var(--color));
+	--link-color: var(--color);
+	--link-color-hover: var(--color);
 
 	--list-marker-color: var(--color);
 
-	--table-border-color: rgb(var(--color));
-	--table-header-background: rgb(var(--color));
-	--table-header-background-hover: rgb(var(--color));
-	--table-row-background-hover: rgba(var(--color) / 0.1);
-	--table-row-alt-background: rgba(var(--color) / 0.1);
-	--table-row-alt-background-hover: rgba(var(--color) / 0.2);
+	--table-border-color: var(--color);
+	--table-header-background: var(--color);
+	--table-header-background-hover: var(--color);
+	--table-row-background-hover: rgb(from var(--color) r g b / 0.1);
+	--table-row-alt-background: rgb(from var(--color) r g b / 0.1);
+	--table-row-alt-background-hover: rgb(from var(--color) r g b / 0.2);
 
 	--text-highlight-bg-rgb: var(--color);
 }
@@ -617,7 +628,7 @@ li[data-task=">"]>p>input:checked::before {
 /* DETAILS */
 details {
 	padding: 0.5rem 0.5rem 0.5rem 3ch;
-	background-color: rgba(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(var(--accent-rgb) / var(--opacity));
 	border-radius: 0.5rem;
 }
 
@@ -649,7 +660,7 @@ a.external-link::after {
 iframe {
 	display: block;
 	width: 100%;
-	margin-inline: auto !important;
+	margin-inline: auto;
 	height: var(--embed-max-height);
 	border-top: 0.1rem solid var(--accent-color);
 	border-inline-end: 0.1rem solid var(--accent-color);
@@ -671,7 +682,8 @@ iframe {
 iframe.external-embed,
 .markdown-source-view.mod-cm6 .cm-content iframe.external-embed {
 	display: block;
-	margin-inline: auto !important;
+	margin-inline: auto;
+	/* to actually center, requires !important */
 }
 
 .embed-title {
@@ -708,6 +720,7 @@ iframe.external-embed,
 .HyperMD-header span.cm-footref.cm-header-5, 
 .HyperMD-header span.cm-footref.cm-header-6 {
 	font-size: var(--font-smallest) !important;
+	/* requires !important to override one in app css */
 }
 
 
@@ -778,7 +791,7 @@ h2,
 .markdown-rendered h2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgba(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(var(--accent-rgb) / var(--opacity));
 
 	&.cm-formatting-header {
 		opacity: 0.5;
@@ -788,7 +801,7 @@ h2,
 .HyperMD-header-2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgba(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(var(--accent-rgb) / var(--opacity));
 	border-radius: 0.5rem;
 	padding-inline: 0.5rem;
 
@@ -862,12 +875,12 @@ img,
 .markdown-source-view.mod-cm6 .cm-content img {
 	border-radius: 0.5rem;
 	border: 0.1rem solid var(--accent-color);
-	margin-inline: auto !important;
+	margin-inline: auto;
 }
 
 span > img {
 	display: block;
-	margin-inline: auto !important;
+	margin-inline: auto;
 }
 
 figcaption {
@@ -924,39 +937,39 @@ mark,
 }
 
 mark.red {
-	background-color: rgba(var(--color-red-rgb) / 0.25);
+	background-color: rgb(var(--color-red-rgb) / 0.25);
 }
 
 mark.orange {
-	background-color: rgba(var(--color-orange-rgb) / 0.25);
+	background-color: rgb(var(--color-orange-rgb) / 0.25);
 }
 
 mark.yellow {
-	background-color: rgba(var(--color-yellow-rgb) / 0.25);
+	background-color: rgb(var(--color-yellow-rgb) / 0.25);
 }
 
 mark.green {
-	background-color: rgba(var(--color-green-rgb) / 0.25);
+	background-color: rgb(var(--color-green-rgb) / 0.25);
 }
 
 mark.cyan {
-	background-color: rgba(var(--color-cyan-rgb) / 0.25);
+	background-color: rgb(var(--color-cyan-rgb) / 0.25);
 }
 
 mark.blue {
-	background-color: rgba(var(--color-blue-rgb) / 0.25);
+	background-color: rgb(var(--color-blue-rgb) / 0.25);
 }
 
 mark.purple {
-	background-color: rgba(var(--color-purple-rgb) / 0.25);
+	background-color: rgb(var(--color-purple-rgb) / 0.25);
 }
 
 mark.pink {
-	background-color: rgba(var(--color-pink-rgb) / 0.25);
+	background-color: rgb(var(--color-pink-rgb) / 0.25);
 }
 
 mark.grey {
-	background-color: rgba(from var(--text-normal) r g b / var(--opacity));
+	background-color: rgb(from var(--text-normal) r g b / var(--opacity));
 }
 
 mark.line,
@@ -1044,7 +1057,7 @@ table,
 	margin-inline: auto;
 
 	--link-color: var(--accent-color);
-	--text-highlight-bg: rgba(var(--accent-rgb) / var(--opacity));
+	--text-highlight-bg: rgb(var(--accent-rgb) / var(--opacity));
 }
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
@@ -1077,90 +1090,90 @@ table,
 .cm-html-embed tbody tr > td:has(mark.red), 
 .markdown-rendered tbody tr > td:has(mark.red),
 .bases-table-cell:has(mark.red) {
-	background-color: rgba(var(--color-red-rgb) / 0.25);
+	background-color: rgb(var(--color-red-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.orange), 
 .markdown-rendered tbody tr > td:has(mark.orange),
 .bases-table-cell:has(mark.orange) {
-	background-color: rgba(var(--color-orange-rgb) / 0.25);
+	background-color: rgb(var(--color-orange-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.yellow), 
 .markdown-rendered tbody tr > td:has(mark.yellow),
 .bases-table-cell:has(mark.yellow) {
-	background-color: rgba(var(--color-yellow-rgb) / 0.25);
+	background-color: rgb(var(--color-yellow-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.green), 
 .markdown-rendered tbody tr > td:has(mark.green),
 .bases-table-cell:has(mark.green) {
-	background-color: rgba(var(--color-green-rgb) / 0.25);
+	background-color: rgb(var(--color-green-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.cyan), 
 .markdown-rendered tbody tr > td:has(mark.cyan),
 .bases-table-cell:has(mark.cyan) {
-	background-color: rgba(var(--color-cyan-rgb) / 0.25);
+	background-color: rgb(var(--color-cyan-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.blue), 
 .markdown-rendered tbody tr > td:has(mark.blue),
 .bases-table-cell:has(mark.blue) {
-	background-color: rgba(var(--color-blue-rgb) / 0.25);
+	background-color: rgb(var(--color-blue-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.purple), 
 .markdown-rendered tbody tr > td:has(mark.purple),
 .bases-table-cell:has(mark.purple) {
-	background-color: rgba(var(--color-purple-rgb) / 0.25);
+	background-color: rgb(var(--color-purple-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.pink), 
 .markdown-rendered tbody tr > td:has(mark.pink),
 .bases-table-cell:has(mark.pink) {
-	background-color: rgba(var(--color-pink-rgb) / 0.25);
+	background-color: rgb(var(--color-pink-rgb) / 0.25);
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
 .cm-html-embed tbody tr > td:has(mark.grey), 
 .markdown-rendered tbody tr > td:has(mark.grey),
 .bases-table-cell:has(mark.grey) {
-	background-color: rgba(from var(--text-normal) r g b / var(--opacity));
+	background-color: rgb(from var(--text-normal) r g b / var(--opacity));
 
 	mark {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
@@ -1194,66 +1207,66 @@ table,
 
 /* CODA: ALPHA ADJUSTMENTS */
 .download-attachments .download-attachment-item:hover:before {
-	box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
 }
 
 .is-translucent:not(.is-fullscreen) {
-	--nav-collapse-icon-color: rgba(var(--mono-rgb-100) / calc(var(--opacity) * 2));
-	--nav-collapse-icon-color-collapsed: rgba(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	--nav-collapse-icon-color: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	--nav-collapse-icon-color-collapsed: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
 }
 
 .diff-line.mod-left {
-	background-color: rgba(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
 }
 
 .diff-line.mod-left .diff-changed {
-	background-color: rgba(var(--background-modifier-error-rgb) / 0.4);
+	background-color: rgb(var(--background-modifier-error-rgb) / 0.4);
 }
 
 .diff-line.mod-right {
-	background-color: rgba(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
 }
 
 .diff-line.mod-right .diff-changed {
-	background-color: rgba(var(--background-modifier-success-rgb) / 0.4);
+	background-color: rgb(var(--background-modifier-success-rgb) / 0.4);
 }
 
 .document-search-input.mod-no-match,
 .document-replace-input.mod-no-match {
-	background-color: rgba(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
 }
 
 @media (hover: hover) {
 
 	.document-search-input.mod-no-match:hover,
 	.document-replace-input.mod-no-match:hover {
-		background-color: rgba(var(--background-modifier-error-rgb) / 0.2);
+		background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
 	}
 }
 
 @media (hover: hover) {
 	input[type="color"]::-webkit-color-swatch:hover {
-		box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100) / 0.25), 0 0 0 3px var(--background-modifier-border-hover);
+		box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / 0.25), 0 0 0 3px var(--background-modifier-border-hover);
 	}
 }
 
 .pdf-findbar .mod-not-found {
-	--background-modifier-form-field: rgba(var(--background-modifier-error-rgb) / 0.1);
-	--background-modifier-border-focus: rgba(var(--background-modifier-error-rgb) / 0.6);
+	--background-modifier-form-field: rgb(var(--background-modifier-error-rgb) / 0.1);
+	--background-modifier-border-focus: rgb(var(--background-modifier-error-rgb) / 0.6);
 }
 
 .annotationLayer .mod-focused {
-	background-color: rgba(var(--text-highlight-bg-rgb) / 0.1);
-	border: var(--size-4-1) solid rgba(var(--text-highlight-bg-rgb) / 0.8);
+	background-color: rgb(var(--text-highlight-bg-rgb) / 0.1);
+	border: var(--size-4-1) solid rgb(var(--text-highlight-bg-rgb) / 0.8);
 }
 
 .metadata-error-container {
-	background-color: rgba(var(--callout-error) / 0.1);
+	background-color: rgb(var(--callout-error) / 0.1);
 }
 
 @media (hover: hover) {
 	.metadata-property-warning-icon:hover {
-		background-color: rgba(var(--accent-rgb) / var(--opacity));
+		background-color: rgb(var(--accent-rgb) / var(--opacity));
 	}
 }
 
@@ -1262,52 +1275,52 @@ table,
 }
 
 .file-tree .mod-new.is-selected {
-	background-color: rgba(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
 }
 
 .file-tree .mod-deleted.is-selected,
 .file-tree .mod-to-delete.is-selected {
-	background-color: rgba(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
 }
 
 .publish-upload-item:before {
-	background-color: rgba(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
 }
 
 .publish-upload-item.mod-failed:before {
-	background-color: rgba(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
 }
 
 .sync-history-list-item-header .sync-history-list-item-avatar {
-	border: 1px solid rgba(var(--mono-rgb-100) / 0.2);
+	border: 1px solid rgb(var(--mono-rgb-100) / 0.2);
 }
 
 .canvas-node-placeholder::after {
-	background-color: rgba(var(--canvas-color) / 0.1);
+	background-color: rgb(var(--canvas-color) / 0.1);
 }
 
 .canvas-node.is-themed .canvas-node-container {
-	border-color: rgba(var(--canvas-color) / 0.7);
-	box-shadow: inset 0 0 0 1px rgba(var(--canvas-color) / 0.7), var(--shadow-stationary);
+	border-color: rgb(var(--canvas-color) / 0.7);
+	box-shadow: inset 0 0 0 1px rgb(var(--canvas-color) / 0.7), var(--shadow-stationary);
 }
 
 .canvas-node-group .canvas-node-content {
-	background-color: rgba(var(--canvas-color) / 0.07);
+	background-color: rgb(var(--canvas-color) / 0.07);
 }
 
 .canvas-group-label {
-	background-color: rgba(var(--canvas-color) / 0.1);
+	background-color: rgb(var(--canvas-color) / 0.1);
 }
 
 .canvas-node.is-themed .canvas-node-content {
-	background-color: rgba(var(--canvas-color) / 0.07);
+	background-color: rgb(var(--canvas-color) / 0.07);
 }
 
 .canvas-edges g.is-focused path.canvas-interaction-path,
 .canvas:not(.is-connecting) .canvas-edges g:hover path.canvas-interaction-path {
-	stroke: rgba(var(--canvas-color) / 0.1);
+	stroke: rgb(var(--canvas-color) / 0.1);
 }
 
 .is-mobile.theme-dark {
-	--background-modifier-hover: rgba(var(--mono-rgb-100) / var(--opacity));
+	--background-modifier-hover: rgb(var(--mono-rgb-100) / var(--opacity));
 }
