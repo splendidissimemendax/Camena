@@ -12,26 +12,16 @@
 
 .theme-light {
 	--accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-	--accent-rgb: from var(--accent-color) r g b;
 
 	--color-red: hsl(var(--red-h), var(--accent-s), var(--accent-l));
-	--color-red-rgb: from var(--color-red) r g b;
 	--color-orange: hsl(var(--orange-h), var(--accent-s), var(--accent-l));
-	--color-orange-rgb: from var(--color-orange) r g b;
 	--color-yellow: hsl(var(--yellow-h), var(--accent-s), var(--accent-l));
-	--color-yellow-rgb: from var(--color-yellow) r g b;
 	--color-green: hsl(var(--green-h), var(--accent-s), var(--accent-l));
-	--color-green-rgb: from var(--color-green) r g b;
 	--color-cyan: hsl(var(--cyan-h), var(--accent-s), var(--accent-l));
-	--color-cyan-rgb: from var(--color-cyan) r g b;
 	--color-blue: hsl(var(--blue-h), var(--accent-s), var(--accent-l));
-	--color-blue-rgb: from var(--color-blue) r g b;
 	--color-purple: hsl(var(--purple-h), var(--accent-s), var(--accent-l));
-	--color-purple-rgb: from var(--color-purple) r g b;
 	--color-pink: hsl(var(--pink-h), var(--accent-s), var(--accent-l));
-	--color-pink-rgb: from var(--color-pink) r g b;
 	--color-grey: hsl(0, 0%, var(--accent-l));
-	--color-grey-rgb: from var(--color-grey) r g b;
 
 	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 98%);
 	--color-base-05: hsl(var(--accent-h), calc(var(--accent-s) / 3), 95%);
@@ -51,26 +41,16 @@
 
 .theme-dark {
 	--accent-color: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-	--accent-rgb: from var(--accent-color) r g b;
 
 	--color-red: hsl(var(--red-h), var(--accent-s), var(--accent-l));
-	--color-red-rgb: from var(--color-red) r g b;
 	--color-orange: hsl(var(--orange-h), var(--accent-s), var(--accent-l));
-	--color-orange-rgb: from var(--color-orange) r g b;
 	--color-yellow: hsl(var(--yellow-h), var(--accent-s), var(--accent-l));
-	--color-yellow-rgb: from var(--color-yellow) r g b;
 	--color-green: hsl(var(--green-h), var(--accent-s), var(--accent-l));
-	--color-green-rgb: from var(--color-green) r g b;
 	--color-cyan: hsl(var(--cyan-h), var(--accent-s), var(--accent-l));
-	--color-cyan-rgb: from var(--color-cyan) r g b;
 	--color-blue: hsl(var(--blue-h), var(--accent-s), var(--accent-l));
-	--color-blue-rgb: from var(--color-blue) r g b;
 	--color-purple: hsl(var(--purple-h), var(--accent-s), var(--accent-l));
-	--color-purple-rgb: from var(--color-purple) r g b;
 	--color-pink: hsl(var(--pink-h), var(--accent-s), var(--accent-l));
-	--color-pink-rgb: from var(--color-pink) r g b;
 	--color-grey: hsl(0, 0%, var(--accent-l));
-	--color-grey-rgb: from var(--color-grey) r g b;
 
 	--color-base-00: hsl(var(--accent-h), calc(var(--accent-s) / 3), 10%);
 	--color-base-05: hsl(var(--accent-h), calc(var(--accent-s) / 3), 15%);
@@ -94,7 +74,7 @@
 }
 
 body {
-	--background-modifier-hover: rgb(var(--accent-rgb) / 0.2);
+	--background-modifier-hover: rgb(from var(--accent-color) r g b / 0.2);
 	--background-modifier-message: var(--accent-color);
 	--background-secondary: var(--background-secondary-alt);
 
@@ -107,7 +87,7 @@ body {
 	--callout-quote: var(--accent-color);
 	--callout-color: var(--accent-color);
 
-	--canvas-color-5: var(--color-blue-rgb);
+	--canvas-color-5: var(--color-blue);
 
 	--checkbox-color: var(--text-muted);
 	--checkbox-color-hover: var(--accent-color);
@@ -116,7 +96,7 @@ body {
 	--checklist-done-decoration: none;
 	--checklist-done-color: var(--text-normal);
 
-	--code-background: rgb(var(--accent-rgb) / var(--opacity));
+	--code-background: rgb(from var(--accent-color) r g b / var(--opacity));
 	--code-comment: var(--color-base-40);
 	--code-normal: var(--accent-color);
 	--code-size: inherit;
@@ -160,8 +140,8 @@ body {
 
 	--icon-color-focused: var(--color-base-60);
 
-	--indentation-guide-color: rgb(var(--mono-rgb-100) / 0.12);
-	--indentation-guide-color-active: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	--indentation-guide-color: rgb(from var(--color-base-100) r g b / 0.12);
+	--indentation-guide-color-active: rgb(from var(--color-base-100) r g b / calc(var(--opacity) * 2));
 
 	--link-color: var(--accent-color);
 	--link-color-hover: var(--link-color);
@@ -172,7 +152,7 @@ body {
 	--link-external-decoration: none;
 	--link-unresolved-color: var(--color-red);
 	--link-unresolved-opacity: 1.0;
-	--link-unresolved-decoration-color: rgb(var(--accent-rgb) / calc(var(--opacity) * 2));
+	--link-unresolved-decoration-color: rgb(from var(--accent-color) r g b / calc(var(--opacity) * 2));
 
 	--list-marker-color: var(--color-base-50);
 
@@ -181,31 +161,30 @@ body {
 
 	--p-spacing: calc(var(--line-height-normal) * 1rem);
 
-	--scrollbar-active-thumb-bg: rgb(var(--mono-rgb-100) / 0.2);
-	--scrollbar-bg: rgb(var(--mono-rgb-100) / 0.05);
-	--scrollbar-thumb-bg: rgb(var(--mono-rgb-100) / 0.1);
+	--scrollbar-active-thumb-bg: rgb(from var(--color-base-100) r g b / 0.2);
+	--scrollbar-bg: rgb(from var(--color-base-100) r g b / 0.05);
+	--scrollbar-thumb-bg: rgb(from var(--color-base-100) r g b / 0.1);
 
-	--setting-items-background: rgb(var(--accent-rgb) / var(--opacity));
+	--setting-items-background: rgb(from var(--accent-color) r g b / var(--opacity));
 
 	--status-bar-border-color: var(--text-muted);
 
-	--swatch-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / var(--opacity));
+	--swatch-shadow: inset 0 0 0 1px rgb(from var(--color-base-100) r g b / var(--opacity));
 
 	--tab-text-color-focused-active-current: var(--color-base-60);
 
-	--tab-switcher-preview-shadow: 0 0 0 1px rgb(var(--mono-rgb-100) / 0.05);
+	--tab-switcher-preview-shadow: 0 0 0 1px rgb(from var(--color-base-100) r g b / 0.05);
 
 	--table-border-color: var(--accent-color);
 	--table-border-width: 0.1rem;
 	--table-header-background: var(--accent-color);
 	--table-header-background-hover: var(--accent-color);
 	--table-header-color: var(--color-base-00);
-	--table-row-background-hover: rgb(var(--accent-rgb) / var(--opacity));
-	--table-row-alt-background: rgb(var(--accent-rgb) / var(--opacity));
-	--table-row-alt-background-hover: rgb(var(--accent-rgb) / calc(var(--opacity) * 2));
+	--table-row-background-hover: rgb(from var(--accent-color) r g b / var(--opacity));
+	--table-row-alt-background: rgb(from var(--accent-color) r g b / var(--opacity));
+	--table-row-alt-background-hover: rgb(from var(--accent-color) r g b / calc(var(--opacity) * 2));
 
-	--text-highlight-bg-rgb: var(--accent-rgb);
-	--text-highlight-bg: rgb(var(--text-highlight-bg-rgb) / 0.25);
+	--text-highlight-bg: rgb(from var(--accent-color) r g b / 0.25);
 
 	--text-normal: var(--color-base-100);
 	--text-muted: var(--color-base-50);
@@ -213,7 +192,7 @@ body {
 
 	--vault-profile-color: var(--color-base-60);
 
-	--workspace-background-translucent: rgb(var(--mono-rgb-0) / 0.6);
+	--workspace-background-translucent: rgb(from var(--color-base-00) r g b / 0.6);
 
 	/* SNIPPET: EMBED HEIGHT FIX */
 	--embed-max-height: 80vh;
@@ -279,7 +258,7 @@ body {
 		padding: 0.25rem 0 0.25rem .75rem;
 		border-left: .5rem solid var(--color-accent);
 		border-radius: 0.5rem;
-		background-color: rgb(var(--accent-rgb) / var(--opacity));
+		background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 	}
 }
 
@@ -310,7 +289,7 @@ body {
 
 	/* CARDS */
 .bases-cards-item:hover {
-	background-color: rgb(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 }
 
 .bases-cards-property.mod-title {
@@ -355,7 +334,7 @@ body {
 }
 
 .bases-tr:hover .bases-td:focus-within .bases-table-cell {
-	background-color: rgb(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 }
 
 
@@ -487,7 +466,7 @@ blockquote a:hover,
 	--table-row-alt-background: rgb(from var(--color) r g b / 0.1);
 	--table-row-alt-background-hover: rgb(from var(--color) r g b / 0.2);
 
-	--text-highlight-bg-rgb: var(--color);
+	--text-highlight-bg: var(--color);
 }
 
 .callout-content {
@@ -628,7 +607,7 @@ li[data-task=">"]>p>input:checked::before {
 /* DETAILS */
 details {
 	padding: 0.5rem 0.5rem 0.5rem 3ch;
-	background-color: rgb(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 	border-radius: 0.5rem;
 }
 
@@ -791,7 +770,7 @@ h2,
 .markdown-rendered h2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgb(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 
 	&.cm-formatting-header {
 		opacity: 0.5;
@@ -801,7 +780,7 @@ h2,
 .HyperMD-header-2 {
 	font-family: var(--font-heading-theme);
 	color: var(--h2-color);
-	background-color: rgb(var(--accent-rgb) / var(--opacity));
+	background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 	border-radius: 0.5rem;
 	padding-inline: 0.5rem;
 
@@ -937,35 +916,35 @@ mark,
 }
 
 mark.red {
-	background-color: rgb(var(--color-red-rgb) / 0.25);
+	background-color: rgb(from var(--color-red) r g b / 0.25);
 }
 
 mark.orange {
-	background-color: rgb(var(--color-orange-rgb) / 0.25);
+	background-color: rgb(from var(--color-orange) r g b / 0.25);
 }
 
 mark.yellow {
-	background-color: rgb(var(--color-yellow-rgb) / 0.25);
+	background-color: rgb(from var(--color-yellow) r g b / 0.25);
 }
 
 mark.green {
-	background-color: rgb(var(--color-green-rgb) / 0.25);
+	background-color: rgb(from var(--color-green) r g b / 0.25);
 }
 
 mark.cyan {
-	background-color: rgb(var(--color-cyan-rgb) / 0.25);
+	background-color: rgb(from var(--color-cyan) r g b / 0.25);
 }
 
 mark.blue {
-	background-color: rgb(var(--color-blue-rgb) / 0.25);
+	background-color: rgb(r g b var(--color-blue) r g b / 0.25);
 }
 
 mark.purple {
-	background-color: rgb(var(--color-purple-rgb) / 0.25);
+	background-color: rgb(from var(--color-purple) r g b / 0.25);
 }
 
 mark.pink {
-	background-color: rgb(var(--color-pink-rgb) / 0.25);
+	background-color: rgb(from var(--color-pink) r g b / 0.25);
 }
 
 mark.grey {
@@ -1057,7 +1036,7 @@ table,
 	margin-inline: auto;
 
 	--link-color: var(--accent-color);
-	--text-highlight-bg: rgb(var(--accent-rgb) / var(--opacity));
+	--text-highlight-bg: rgb(from var(--accent-color) r g b / var(--opacity));
 }
 
 .markdown-source-view.mod-cm6 .cm-line.HyperMD-table-row {
@@ -1090,7 +1069,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.red), 
 .markdown-rendered tbody tr > td:has(mark.red),
 .bases-table-cell:has(mark.red) {
-	background-color: rgb(var(--color-red-rgb) / 0.25);
+	background-color: rgb(from var(--color-red) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1100,7 +1079,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.orange), 
 .markdown-rendered tbody tr > td:has(mark.orange),
 .bases-table-cell:has(mark.orange) {
-	background-color: rgb(var(--color-orange-rgb) / 0.25);
+	background-color: rgb(from var(--color-orange) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1110,7 +1089,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.yellow), 
 .markdown-rendered tbody tr > td:has(mark.yellow),
 .bases-table-cell:has(mark.yellow) {
-	background-color: rgb(var(--color-yellow-rgb) / 0.25);
+	background-color: rgb(from var(--color-yellow) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1120,7 +1099,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.green), 
 .markdown-rendered tbody tr > td:has(mark.green),
 .bases-table-cell:has(mark.green) {
-	background-color: rgb(var(--color-green-rgb) / 0.25);
+	background-color: rgb(from var(--color-green) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1130,7 +1109,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.cyan), 
 .markdown-rendered tbody tr > td:has(mark.cyan),
 .bases-table-cell:has(mark.cyan) {
-	background-color: rgb(var(--color-cyan-rgb) / 0.25);
+	background-color: rgb(from var(--color-cyan) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1140,7 +1119,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.blue), 
 .markdown-rendered tbody tr > td:has(mark.blue),
 .bases-table-cell:has(mark.blue) {
-	background-color: rgb(var(--color-blue-rgb) / 0.25);
+	background-color: rgb(from var(--color-blue) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1150,7 +1129,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.purple), 
 .markdown-rendered tbody tr > td:has(mark.purple),
 .bases-table-cell:has(mark.purple) {
-	background-color: rgb(var(--color-purple-rgb) / 0.25);
+	background-color: rgb(from var(--color-purple) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1160,7 +1139,7 @@ table,
 .cm-html-embed tbody tr > td:has(mark.pink), 
 .markdown-rendered tbody tr > td:has(mark.pink),
 .bases-table-cell:has(mark.pink) {
-	background-color: rgb(var(--color-pink-rgb) / 0.25);
+	background-color: rgb(from var(--color-pink) r g b / 0.25);
 
 	mark {
 		background-color: transparent;
@@ -1207,57 +1186,57 @@ table,
 
 /* CODA: ALPHA ADJUSTMENTS */
 .download-attachments .download-attachment-item:hover:before {
-	box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	box-shadow: inset 0 0 0 1px rgb(from var(--color-base-100) r g b / calc(var(--opacity) * 2));
 }
 
 .is-translucent:not(.is-fullscreen) {
-	--nav-collapse-icon-color: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
-	--nav-collapse-icon-color-collapsed: rgb(var(--mono-rgb-100) / calc(var(--opacity) * 2));
+	--nav-collapse-icon-color: rgb(from var(--color-base-100) r g b / calc(var(--opacity) * 2));
+	--nav-collapse-icon-color-collapsed: rgb(from var(--color-base-100) r g b / calc(var(--opacity) * 2));
 }
 
 .diff-line.mod-left {
-	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-error) r g b / 0.2);
 }
 
 .diff-line.mod-left .diff-changed {
-	background-color: rgb(var(--background-modifier-error-rgb) / 0.4);
+	background-color: rgb(from var(--background-modifier-error) r g b / 0.4);
 }
 
 .diff-line.mod-right {
-	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-success) r g b / 0.2);
 }
 
 .diff-line.mod-right .diff-changed {
-	background-color: rgb(var(--background-modifier-success-rgb) / 0.4);
+	background-color: rgb(from var(--background-modifier-success) r g b / 0.4);
 }
 
 .document-search-input.mod-no-match,
 .document-replace-input.mod-no-match {
-	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-error) r g b / 0.2);
 }
 
 @media (hover: hover) {
 
 	.document-search-input.mod-no-match:hover,
 	.document-replace-input.mod-no-match:hover {
-		background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
+		background-color: rgb(from var(--background-modifier-error) r g b / 0.2);
 	}
 }
 
 @media (hover: hover) {
 	input[type="color"]::-webkit-color-swatch:hover {
-		box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) / 0.25), 0 0 0 3px var(--background-modifier-border-hover);
+		box-shadow: inset 0 0 0 1px rgb(from var(--color-base-100) r g b / 0.25), 0 0 0 3px var(--background-modifier-border-hover);
 	}
 }
 
 .pdf-findbar .mod-not-found {
-	--background-modifier-form-field: rgb(var(--background-modifier-error-rgb) / 0.1);
-	--background-modifier-border-focus: rgb(var(--background-modifier-error-rgb) / 0.6);
+	--background-modifier-form-field: rgb(from var(--background-modifier-error) r g b / 0.1);
+	--background-modifier-border-focus: rgb(from var(--background-modifier-error) r g b / 0.6);
 }
 
 .annotationLayer .mod-focused {
-	background-color: rgb(var(--text-highlight-bg-rgb) / 0.1);
-	border: var(--size-4-1) solid rgb(var(--text-highlight-bg-rgb) / 0.8);
+	background-color: rgb(from var(--accent-color) r g b / 0.1);
+	border: var(--size-4-1) solid rgb(from var(--accent-color) r g b / 0.8);
 }
 
 .metadata-error-container {
@@ -1266,7 +1245,7 @@ table,
 
 @media (hover: hover) {
 	.metadata-property-warning-icon:hover {
-		background-color: rgb(var(--accent-rgb) / var(--opacity));
+		background-color: rgb(from var(--accent-color) r g b / var(--opacity));
 	}
 }
 
@@ -1275,24 +1254,24 @@ table,
 }
 
 .file-tree .mod-new.is-selected {
-	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-success) r g b / 0.2);
 }
 
 .file-tree .mod-deleted.is-selected,
 .file-tree .mod-to-delete.is-selected {
-	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-error) r g b / 0.2);
 }
 
 .publish-upload-item:before {
-	background-color: rgb(var(--background-modifier-success-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-success) r g b / 0.2);
 }
 
 .publish-upload-item.mod-failed:before {
-	background-color: rgb(var(--background-modifier-error-rgb) / 0.2);
+	background-color: rgb(from var(--background-modifier-error) r g b / 0.2);
 }
 
 .sync-history-list-item-header .sync-history-list-item-avatar {
-	border: 1px solid rgb(var(--mono-rgb-100) / 0.2);
+	border: 1px solid rgb(from var(--color-base-100) r g b / 0.2);
 }
 
 .canvas-node-placeholder::after {
@@ -1322,5 +1301,5 @@ table,
 }
 
 .is-mobile.theme-dark {
-	--background-modifier-hover: rgb(var(--mono-rgb-100) / var(--opacity));
+	--background-modifier-hover: rgb(from var(--color-base-100) r g b / var(--opacity));
 }
