@@ -135,6 +135,10 @@ body {
 	--h5-size: 1.2em;
 	--heading-spacing: 1.2em;
 
+	--highlight-background-cyan: color-mix(in oklch, var(--color-cyan) var(--highlight-opacity), transparent);
+	--highlight-background-pink: color-mix(in oklch, var(--color-pink) var(--highlight-opacity), transparent);
+	--highlight-background-grey: color-mix(in oklch, var(--color-grey) var(--highlight-opacity), transparent);
+
 	--hr-color: var(--accent-color);
 	--hr-thickness: 0.1rem;
 
@@ -850,16 +854,16 @@ div:has(>.cm-hr) {
 
 
 /* IMAGES AND FIGURES */
-img,
-.markdown-source-view.mod-cm6 .cm-content img {
+img:not(.highlight-swatch),
+.markdown-source-view.mod-cm6 .cm-content img:not(.highlight-swatch) {
 	border-radius: 0.5rem;
-	border: 0.1rem solid var(--accent-color);
-	margin-inline: auto;
+	border: var(--border-width) solid var(--color-accent);
+	margin-inline: auto !important;
 }
 
-span > img {
+span > img:not(.highlight-swatch) {
 	display: block;
-	margin-inline: auto;
+	margin-inline: auto !important;
 }
 
 figcaption {
@@ -903,11 +907,13 @@ figcaption {
 /* MARKS */
 mark,
 .markdown-rendered mark,
-.cm-highlight {
-	padding: 0.1rem 0.05rem;
+.cm-highlight,
+.cm-s-obsidian span.cm-formatting-highlight, 
+.cm-s-obsidian span.cm-highlight {
+	padding: 0.1rem 0;
 	border-radius: 0.2rem;
 
-	background-color: var(--text-highlight-bg);
+	background-color: var(--highlight-background);
 	color: var(--text-normal);
 }
 
@@ -916,39 +922,39 @@ mark,
 }
 
 mark.red {
-	background-color: rgb(from var(--color-red) r g b / 0.25);
+	--highlight-background: var(--highlight-background-red);
 }
 
 mark.orange {
-	background-color: rgb(from var(--color-orange) r g b / 0.25);
+	--highlight-background: var(--highlight-background-orange);
 }
 
 mark.yellow {
-	background-color: rgb(from var(--color-yellow) r g b / 0.25);
+	--highlight-background: var(--highlight-background-yellow);
 }
 
 mark.green {
-	background-color: rgb(from var(--color-green) r g b / 0.25);
+	--highlight-background: var(--highlight-background-green);
 }
 
 mark.cyan {
-	background-color: rgb(from var(--color-cyan) r g b / 0.25);
+	--highlight-background: var(--highlight-background-cyan);
 }
 
 mark.blue {
-	background-color: rgb(r g b var(--color-blue) r g b / 0.25);
+	--highlight-background: var(--highlight-background-blue);
 }
 
 mark.purple {
-	background-color: rgb(from var(--color-purple) r g b / 0.25);
+	--highlight-background: var(--highlight-background-purple);
 }
 
 mark.pink {
-	background-color: rgb(from var(--color-pink) r g b / 0.25);
+	--highlight-background: var(--highlight-background-pink);
 }
 
 mark.grey {
-	background-color: rgb(from var(--text-normal) r g b / var(--opacity));
+	--highlight-background: var(--highlight-background-grey);
 }
 
 mark.line,
@@ -1066,94 +1072,95 @@ table,
 	}
 }
 
+.cm-html-embed tbody tr > td:has(mark), 
+.markdown-rendered tbody tr > td:has(mark),
+.bases-table-cell:has(mark) {
+	background-color: var(--highlight-background);
+
+	mark {
+		background-color: transparent !important;
+	}
+}
+
+.cm-html-embed tbody tr > td:has(mark[data-highlight="red"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="red"]),
+.bases-table-cell:has(mark[data-highlight="red"]),
 .cm-html-embed tbody tr > td:has(mark.red), 
 .markdown-rendered tbody tr > td:has(mark.red),
 .bases-table-cell:has(mark.red) {
-	background-color: rgb(from var(--color-red) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-red);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="orange"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="orange"]),
+.bases-table-cell:has(mark[data-highlight="orange"]),
 .cm-html-embed tbody tr > td:has(mark.orange), 
 .markdown-rendered tbody tr > td:has(mark.orange),
 .bases-table-cell:has(mark.orange) {
-	background-color: rgb(from var(--color-orange) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-orange);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="yellow"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="yellow"]),
+.bases-table-cell:has(mark[data-highlight="yellow"]),
 .cm-html-embed tbody tr > td:has(mark.yellow), 
 .markdown-rendered tbody tr > td:has(mark.yellow),
 .bases-table-cell:has(mark.yellow) {
-	background-color: rgb(from var(--color-yellow) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-yellow);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="green"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="green"]),
+.bases-table-cell:has(mark[data-highlight="green"]),
 .cm-html-embed tbody tr > td:has(mark.green), 
 .markdown-rendered tbody tr > td:has(mark.green),
 .bases-table-cell:has(mark.green) {
-	background-color: rgb(from var(--color-green) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-green);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="cyan"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="cyan"]),
+.bases-table-cell:has(mark[data-highlight="cyan"]),
 .cm-html-embed tbody tr > td:has(mark.cyan), 
 .markdown-rendered tbody tr > td:has(mark.cyan),
 .bases-table-cell:has(mark.cyan) {
-	background-color: rgb(from var(--color-cyan) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-cyan);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="blue"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="blue"]),
+.bases-table-cell:has(mark[data-highlight="blue"]),
 .cm-html-embed tbody tr > td:has(mark.blue), 
 .markdown-rendered tbody tr > td:has(mark.blue),
 .bases-table-cell:has(mark.blue) {
-	background-color: rgb(from var(--color-blue) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-blue);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="purple"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="purple"]),
+.bases-table-cell:has(mark[data-highlight="purple"]),
 .cm-html-embed tbody tr > td:has(mark.purple), 
 .markdown-rendered tbody tr > td:has(mark.purple),
 .bases-table-cell:has(mark.purple) {
-	background-color: rgb(from var(--color-purple) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-purple);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="pink"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="pink"]),
+.bases-table-cell:has(mark[data-highlight="pink"]),
 .cm-html-embed tbody tr > td:has(mark.pink), 
 .markdown-rendered tbody tr > td:has(mark.pink),
 .bases-table-cell:has(mark.pink) {
-	background-color: rgb(from var(--color-pink) r g b / 0.25);
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-pink);
 }
 
+.cm-html-embed tbody tr > td:has(mark[data-highlight="grey"]), 
+.markdown-rendered tbody tr > td:has(mark[data-highlight="grey"]),
+.bases-table-cell:has(mark[data-highlight="grey"]),
 .cm-html-embed tbody tr > td:has(mark.grey), 
 .markdown-rendered tbody tr > td:has(mark.grey),
 .bases-table-cell:has(mark.grey) {
-	background-color: rgb(from var(--text-normal) r g b / var(--opacity));
-
-	mark {
-		background-color: transparent;
-	}
+	--highlight-background: var(--highlight-background-grey);
 }
 
 
